@@ -1,0 +1,54 @@
+page{
+  padding: 28rpx 48rpx;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.loginBig{ 
+     line-height: 126rpx;
+     height:126rpx;
+     font-size: 54rpx;
+     color: #333333;
+     display: block;
+}
+.loginLit{
+  font-size: 38rpx;
+  color: #666666;
+}
+button{
+  margin-top: 144rpx;
+  margin-bottom: 34rpx;
+}
+.phone{
+  width: 100%;
+  font-size: 30rpx;
+  position: relative;
+  color: #697aa1;
+  z-index: 9900;
+text-align: center;
+}
+.agree{
+  position: absolute;
+  bottom:46rpx;
+  width: 100%;
+  display: block;
+  font-size: 24rpx;
+  color: #666666;
+}
+/* .agree text{
+  display: inline-block;
+} */
+.agree navigator{
+   display: inline-block;
+   color: #538ce9;
+}
+.agreeMent-deal{
+  display: flex;
+  flex-direction: column;
+  margin-left: 106rpx;
+
+}
+.accept-pro{
+  margin-bottom:10rpx;
+}

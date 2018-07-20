@@ -1,0 +1,40 @@
+<import src="/pages/template/template.wxml" />
+<template wx:if="{{!is_showHideBtn}}" is='hideBtn' 
+  data='{{hideBtnData}}'></template>
+<text class='loginBig'>Hi，请登录</text>
+<text class='loginLit'>登录即可拿钱</text>
+  <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" type='primary'> 微信快捷登录 </button> -->
+  <button disabled="{{btnFlag?false:true}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" type='primary'> 微信快捷登录 </button>
+<view class='phone' catchtap='loginByphone'>手机号登录</view>
+
+
+<!-- <text class='phone' catchtap="perfectInfo">完善资料</text> -->
+
+<view  class='agree'>
+
+  <view class="section section_gap">
+    <checkbox-group name="checkbox" class="agreeMent-deal" bindchange="checkboxChange">
+      <label class='accept-pro'><checkbox value="1" checked />我已阅读并接受<navigator url='/pages/agreement/agreement'>{{xieyi}}</navigator> </label>
+      <label><checkbox value="2" checked/>免费领取最高100万意外险一份</label>
+    </checkbox-group>
+  </view> 
+
+
+ 
+</view>
+
+
+
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+

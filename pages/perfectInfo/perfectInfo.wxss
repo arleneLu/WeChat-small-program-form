@@ -1,0 +1,95 @@
+/* pages/my/info.wxss */
+.head{
+  display:flex;
+  flex-direction: column;
+  background: #efefef;
+  width:100%;
+  padding: 0rpx 0rpx;
+  height: 300rpx;
+  background:dodgerblue url(../../images/perfectInfo/banner22x.jpg) ;
+  background-size: 300px 300px;
+}
+.quotainfo{
+  position: absolute;
+  top: 43rpx;
+  text-align: center;
+  color: #fff;
+  left:37%;
+  margin-left: -100rpx;
+
+}
+.quotainfo .money{
+  position: relative;
+  margin: 0 auto;
+  
+  font-size: 60rpx;
+}
+.quotainfo .bigown{
+  font-family: "microsoft yahei";
+  font-size: 35rpx;
+
+}
+
+.headimage{
+  width: 100%;
+  height: 230rpx;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+}
+.form{
+  margin-top: -9rpx;
+}
+.form .weui-cells{z-index: 0;}
+.form .weui-input{
+  overflow: hidden;
+  text-align: right;
+  padding-right:60rpx;
+
+  }
+.weui-btn{background: #ff7a03!important;color:#fff!important;}
+
+.weui-label{
+  font-size: 30rpx;
+  width: 200px;
+}
+.weui-cell__bd{
+  font-size: 30rpx;
+  width: 200px;
+}
+.weui-cell{
+  padding-right: 0rpx;
+}
+.weui-cell__fh{
+ margin-left: 10px;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 6rpx;
+  position: absolute;
+  top:18rpx;
+  right:17rpx;
+}
+
+/* .ime-disabled{
+  ime-mode:disabled;
+} */
+
+
+/* .weui-input:empty::before{
+    color:#9b9b9b;
+    content:"请选择";  
+}   */
+.page__bd{
+  padding-bottom:25rpx;
+
+}
+
+.phcolor-success:empty::before{
+    color: #9b9b9b;  
+    content:"请选择";  
+}
+
+.phcolor-error:empty::before{
+    color:red;
+    content:"请选择";  
+}

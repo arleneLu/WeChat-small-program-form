@@ -1,0 +1,96 @@
+page{
+  padding:20rpx;
+}
+.phoneLogin{
+  display: flex;
+  flex-direction: column;
+ margin-right: 20rpx;
+}
+.phoneLogin-a{
+  margin-top: 30rpx;
+   margin-bottom: 25rpx;
+   margin-left: 60rpx;
+}
+.phoneLogin-pnum{
+ text-align: left;
+ padding-left: 25rpx;
+ height:100rpx;
+line-height:100rpx;
+font-size:30rpx;
+width:80%;
+padding-top:12rpx;
+
+
+
+}
+.phoneLogin-pvalid{
+ text-align: left;
+ padding-left: 25rpx;
+ width: 60%;
+ height: 100rpx;
+ line-height: 100rpx;
+ font-size: 30rpx;
+ padding-top:12rpx;
+
+}
+.login-btn{
+  display: block;
+  width: 88%;
+  height: 90rpx;
+  margin:0 auto;
+  background:#ff7a03;
+  color: #fff;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+.phonenum-info{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin:0 auto;
+  /* margin-top: 30rpx;
+  margin-bottom: 34rpx;  */
+  padding-right:20rpx;
+  border-bottom:3rpx solid #ccc;
+  position: relative;
+  height:100rpx;
+line-height:100rpx;
+
+
+}
+.Code{
+   color: #ff7a03;
+  position: absolute;
+  right: 15rpx;
+  top:17rpx;
+  font-size: 30rpx;
+ margin-left: 10rpx;
+ margin-right: 10rpx;
+   padding-left: 0rpx;
+  padding-right: 0rpx;
+  width:200rpx;
+  height: 69rpx;
+  line-height: 69rpx; 
+  border:1rpx solid #ff7a03; 
+ 
+} 
+.disabled{
+  background: #ccc !important;
+  color: #eee !important;
+  border: 1px solid #999 !important;
+}
+.numText{
+   margin-top: 17rpx; 
+   font-size: 30rpx;
+}
+.yanzhengma{
+  /* margin-top:10rpx; */
+ 
+}
+.distanceTo{
+  margin-top: 30rpx;
+}
+

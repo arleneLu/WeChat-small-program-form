@@ -1,0 +1,37 @@
+<import src="/pages/template/template.wxml" />
+<template wx:if="{{!is_showHideBtn}}" is='hideBtn' 
+  data='{{hideBtnData}}'></template>
+ <!-- <view class='phoneLogin'>
+  <text class='phoneLogin-a'>手机号登陆</text>
+  <form bindsubmit="formSubmit">
+    <view class='phonenum-info'>
+      <text class='numText'>手机号</text>
+      <input class="phoneLogin-pnum" placeholder="请填写手机号" type="number" name="phone" placeholder-style="font-size:28rpx;" />
+    </view>
+    <view class='phonenum-info'>
+      <text class='numText'>验证码</text>
+      <input class="phoneLogin-pvalid" placeholder="请填写验证码" name="vaildnum" placeholder-style="font-size:28rpx;" />
+      <button class='gotvalid-num' hover-class="button-hover" catchtap='getValidNum'>获取验证码</button>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" class='login-btn' hover-class="button-hover">登陆</button>
+    </view>
+  </form>
+</view>  -->
+
+
+
+<view class="phoneLogin">
+<text class='phoneLogin-a'>手机号登录</text>
+  <view class="phonenum-info distanceTo">
+  <text class='numText'>手机号</text>
+    <input class="phoneLogin-pnum" bindinput='loginPhone' placeholder="请填写手机号" placeholder-style='font-size:30rpx;' maxlength="11" type='number'/> </view>
+  <view class="phonenum-info yanzhengma" style=''>
+  <text class='numText'>验证码</text>
+    <input class="phoneLogin-pvalid" placeholder="请填写验证码" placeholder-style='font-size:30rpx;' bindinput='yanZhengInput'maxlength="4" type='number' />
+    <button bindtap='getNewCode' disabled="{{getCode?false:true}}" class="Code {{getCode?'':'disabled'}}">{{timeNum}}{{timeText}}</button>
+  </view>
+  <view class="btn-area">
+      <button formType="submit" class='login-btn'  bindtap="loginBtnClick">登录</button>
+    </view>
+</view> 

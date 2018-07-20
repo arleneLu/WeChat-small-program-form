@@ -1,0 +1,58 @@
+<import src="/pages/template/template.wxml" />
+<template wx:if="{{!is_showHideBtn}}" is='hideBtn' 
+  data='{{hideBtnData}}'></template>
+<view>
+  <image class='successApply-img' src='../../images/successApply/banner2@2x.jpg'></image>
+  <view class='successApply-con'>
+    <text class='congraduation'>恭喜您！申请成功</text>
+    <text class='contactyou'>客服将在1个工作日内与您联系</text>
+  </view>
+  <view class='successApply-notice'>
+    <image class="successApply-laba" src="../../images/successApply/laba.png"></image>
+    <text class="tishi">温馨提示：</text>
+    <text>为您精准匹配了多款通过率较高的产品。</text>
+  </view>
+  <scroll-view>
+  <!-- <web-view src="https://m.boc7.com">AAAAAAAAAAA</web-view> -->
+    <block wx:for="{{loanData}}" wx:for-item="item" wx:key="index">
+    <view class='successApply-info'>
+      <view class='successApply-title'>
+        <image class="logo" src='{{item.logo}}'></image>
+         <view class='loan-date'>
+           <text class='money'> {{item.t1}}-{{item.t2}}</text>
+          <text class='detail' > {{item.t3}}</text>
+        </view>
+      </view>
+      <view>
+        <view>
+           <button catchtap='getInfo' data-info="{{item.t1}}" class='contact-server' open-type="contact">联系客服</button> 
+        </view>
+        
+      </view>
+   
+    </view>
+   </block>
+  </scroll-view>
+</view>
+
+<!-- 
+  <view class='successApply-title'>
+        <image class="logo" src='../../images/successApply/chedai.jpg'></image>
+        <text class='changkuai'>{{item.title}}</text>
+        <text class='edu'>额度</text>
+        <text class='money'>{{item.edu}}</text>
+      </view>
+      <view>
+        <view class='loan-date'>
+          <view class='dot'></view>
+          <text>贷款期限： {{item.date}}</text>
+        </view>
+        <view class='loan-date'>
+          <view class='dot'></view>
+          <text>日利率： {{item.rate}}</text>
+        </view>
+        <view>
+           <button class='contact-server' open-type="contact">联系客服</button> 
+        </view>
+        
+      </view> -->

@@ -1,0 +1,23 @@
+page{
+  box-sizing: border-box;
+}
+.userAgreem {
+  width: 100%;
+  padding: 34rpx 48rpx 60rpx;
+  box-sizing: border-box;
+  
+
+}
+.userAgreem text {
+  font-size: 22rpx;
+  color: #888888;
+  line-height: 40rpx;
+  display: block;
+}
+.userAgreem .title {
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: bold;
+  margin: 40rpx 0;
+  display: block;
+}

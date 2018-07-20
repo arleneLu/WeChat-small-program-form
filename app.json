@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/successApply/successApply",
+    "pages/index/index",
+    "pages/switchcity/switchcity",
+    "pages/accredit/accredit",
+    "pages/agreement/agreement",
+    "pages/information/information",
+     "pages/phoneLogin/phoneLogin",
+     "pages/perfectInfo/perfectInfo"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
+  }
+}

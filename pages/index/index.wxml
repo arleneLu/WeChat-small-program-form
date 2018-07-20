@@ -1,0 +1,99 @@
+<import src="/pages/template/template.wxml" />
+<template wx:if="{{!is_showHideBtn}}" is='hideBtn' 
+  data='{{hideBtnData}}'></template>
+<view>
+<image class='instrument' wx:if="{{imgShow}}" src='{{firstPageImg}}' ></image>
+<image class='instrument' wx:else src='../../images/firstPage/u292.png' ></image>
+  <view>
+    <form bindsubmit="formSubmit">
+      <view class='firstPage-own'>
+        <image class='weui-cell_img' src='../../images/firstPage/money.png'></image>
+        <text decode="{{true}}" class='line'>| </text>
+        <text class="weui-label" style='width:140rpx;'>借款金额</text>
+        <!-- <input placeholder-class="{{elType=='money'?'input-phcolor-error':'input-phcolor-success'}}" type='number' class="weui-input weui-input-own" maxlength='7'  placeholder="请输入"  name="money" bindblur="inputMoney" value='{{info.money}}'/> -->
+ <view name="money" contenteditable  placeholder="请选择贷款金额" class=" weui-input carPosition {{elType=='money'?'phcolor-error':'phcolor-success'}}" bindtap="hasMoney">{{info.money}}</view> 
+
+      <!-- {{elType=='money'?'input-phcolor-error':'input-phcolor-success'}} -->
+        <image class="weui-cell__fh arrImg" src='../../images/icon/arrow.png'></image>
+      </view>
+            <view class='firstPage-city'>
+        <image class='weui-cell_img' src='../../images/firstPage/city.png'></image>
+        <text decode="{{true}}" class='line'>| </text>
+        <text class="weui-cell__bd">工作城市</text>
+
+        
+ <view name="currenCity" contenteditable  placeholder="请选择" class="carPosition weui-input {{elType=='currenCity'?'phcolor-error':'phcolor-success'}}" bindtap="jumpTocity">{{currenCity}}</view> 
+        <image class="weui-cell__fh arrImg" src='../../images/icon/arrow.png'></image>
+      </view>
+
+      <view class='firstPage-name'>
+        <image class='weui-cell_img' src='../../images/firstPage/name.png'></image>
+        <text decode="{{true}}" class='line'>| </text>
+        <text class="weui-label" style='width:140rpx;'>本人姓名</text>
+
+        <input class="weui-input weui-input-own name-style carPosition" 
+        placeholder-class="{{elType=='userName'?'input-phcolor-error':'input-phcolor-success'}}"
+         placeholder="请输入您的姓名" type="text" name="userName"  value='{{info.userName}}' bindinput='inputUserName'/>
+      </view>
+
+      <view class='firstPage-name carstyle' >
+        <image class='weui-cell_img' src='../../images/firstPage/car.png'></image>
+        <text decode="{{true}}" class='line'>| </text>
+        <text class="weui-label firstPage-car">是否有车？</text>
+
+ <view name="car" contenteditable  placeholder="请选择" class="carPosition weui-input {{elType=='car'?'phcolor-error':'phcolor-success'}}" bindtap="hasCar">{{info.car}}</view> 
+
+        <!-- <input class="weui-input" placeholder="请选择" type="text" name="car" placeholder-style="font-size:30rpx;" value="{{info.car}}" disabled bindtap="hasCar"/> -->
+        <!-- <text >〉</text> -->
+        <image class="weui-cell__fh arrImg" src='../../images/icon/arrow.png'></image>
+      </view>
+ <swiper autoplay='true' interval="5000" duration="1000" circular="true" vertical="true">
+      <block>
+        <swiper-item>
+          <text>用户130xxxx5568 20分钟前 成功放款25000元</text>
+        </swiper-item>
+        <swiper-item>
+          <text>用户156xxxx2864 30分钟前 成功放款30000元</text>
+        </swiper-item>
+        <swiper-item>
+          <text>用户135xxxx0731 36分钟前 成功放款20000元</text>
+        </swiper-item>
+        <swiper-item>
+          <text>用户130xxxx7543 15分钟前 成功放款40000元</text>
+        </swiper-item>
+      </block>
+    </swiper>
+
+      <view class="btn-area">
+        <button formType="submit" class='getMoney'>去拿钱</button>
+      </view>
+
+    </form>
+    <view class='big-promise'>
+      <text class='believe'decode="{{true}}">&nbsp;信&nbsp; </text>
+      <text class='no-mortgage'>纯信用，免抵押</text>
+    </view>
+    <view class='firstPage-promise'>
+      <view class='firstPage-edu'>
+        <image class='avoid' src='../../images/firstPage/u265.png'></image>
+        <text>免抵押，免担保</text>
+      </view>
+      <view class='firstPage-edu'>
+        <image src='../../images/firstPage/u266.png'></image>
+        <text>有身份证即可</text>
+      </view>
+      <view class='firstPage-edu'>
+        <image src='../../images/firstPage/u267.png'></image>
+        <text>1-20万额度</text>
+      </view>
+      <view class='firstPage-edu'>
+        <image src='../../images/firstPage/u268.png'></image>
+        <text>快至1天到账</text>
+      </view>
+    </view>
+   
+
+  </view>
+
+<!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> </button> -->
+</view>

@@ -1,0 +1,77 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.9",
+	"appid": "wx5e4be6023b33a54d",
+	"projectname": "bocai",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "accredit",
+					"pathName": "pages/accredit/accredit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "info",
+					"pathName": "pages/information/information",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "successApply",
+					"pathName": "pages/successApply/successApply",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "phoneLogin",
+					"pathName": "pages/phoneLogin/phoneLogin",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "perfectInfo",
+					"pathName": "pages/perfectInfo/perfectInfo",
+					"query": ""
+				}
+			]
+		}
+	}
+}

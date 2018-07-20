@@ -1,0 +1,351 @@
+page {
+  width: 100%;
+  height: 100%;
+   /* background: linear-gradient(#31c1fd, #a931ff);  */
+
+  /* padding: 0 38rpx; */
+  box-sizing: border-box;
+
+}
+
+.location image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.location text {
+  height: 34rpx;
+  font-size: 30rpx;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.limit {
+  height: 152rpx;
+  line-height: 152rpx;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  font-size: 70rpx;
+}
+form{
+   font-size: 32rpx;
+}
+
+.firstPage-img{
+  width: 100%;
+  height: 370rpx;
+}
+.instrument{
+  width: 100%;
+  height: 320rpx;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 20rpx solid #eee;
+}
+.getMoney{
+  display: block;
+  width: 90%;
+  height: 90rpx;
+  margin:0 auto;
+  background:#ff7a03;
+  color: #fff;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
+.advantage{
+  display: flex;
+  justify-content: space-around;
+}
+.advantage view{
+  height: 134rpx;
+  line-height: 134rpx;
+  font-size: 26rpx;
+  color: #fff;
+  vertical-align: middle;
+}
+.advantage view icon{
+    vertical-align: middle;
+    
+    width: 40rpx;
+    height: 90rpx;
+}
+.advantage view text{
+    vertical-align: middle;
+    padding-left: 12rpx;
+}
+swiper{
+  width: 100%;
+  height: 60rpx;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10rpx;
+  margin: 0 auto;
+  vertical-align: middle;
+  /* box-sizing: border-box; */
+  background: #f5f5f5;
+  text-align: center;
+  padding-top: 40rpx;
+  color: #757575;
+
+  
+  
+}
+swiper-item text{
+ 
+  font-size: 26rpx;
+  height: 50%;
+  line-height: 40rpx;
+  display: block
+}
+
+.weui-cells {
+position:relative;
+background-color:#fff;
+/* line-height:1.41176471; */
+font-size:30rpx;
+border-bottom: 1rpx solid #eee;
+border-top: 0rpx;
+
+}
+.weui-cell_img{
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+  margin-top: 20rpx;
+
+}
+.weui-cell_imgcity{
+    width: 55rpx;
+  height: 55rpx;
+  vertical-align: middle;
+}
+
+.line{
+  color:#ff7a03;
+  margin-left: 20rpx;
+   margin-right: 20rpx;
+   margin-top: 14rpx;
+}
+.weui-cell__bd{
+  line-height:74rpx;
+  margin-top:7rpx;
+
+}
+navigator {
+margin-top:17rpx;
+}
+
+
+
+/* .section{
+  display: flex;
+  flex-direction: row;
+}
+.section image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.section__title{
+  color:#586c94;
+  font-size: 30rpx;
+} */
+
+.weui-cells_after-title image{
+width: 40rpx;
+height: 40rpx;
+/* flex: 1; */
+}
+.weui-cells_after-title{
+  display: flex;
+}
+.weui-cells_after-title navigator{
+  flex: 11;
+}
+.weui-input{
+  text-align: right;
+  color: #000;
+}
+.btn-area{
+  background:#f5f5f5;
+}
+.weui-cells{
+  margin-top: 0rpx;
+}
+.inputHid{
+  width: 0;
+  height: 0;
+  position: absolute;
+  right:1000px;
+}
+.myView {
+  font-size: 35rpx;
+  margin: 20rpx;
+}
+
+.cBtn {
+  height: 100rpx;
+  margin-left: 300rpx;
+}
+
+.cs_button {
+  background-color: #fff;
+  border: 0px;
+  height: 100rpx;
+  position: fixed;
+  margin-left: 240rpx;
+}
+
+.cs_button:after {
+  border: 0px;
+}
+
+.cs_image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.firstPage-city,.firstPage-own,.firstPage-name{
+  display: flex;
+  flex-direction: row;
+  padding:3rpx 20rpx;
+  padding-right: 0rpx;
+
+  border-bottom: 3rpx solid rgba(217, 212, 212, 0.86);
+}
+/* .firstPage-name{
+margin-bottom: 0rpx;
+} */
+.firstPage-own,.firstPage-name{
+  padding:9rpx 20rpx;
+  padding-right: 0rpx;
+}
+.carstyle{
+   padding:3rpx 20rpx;
+}
+
+.weui-label{
+  margin-top: 18rpx;
+  width:160rpx;
+
+}
+ .weui-input-own{
+  padding-right: 10rpx;
+} 
+.yuan{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+.navigator{
+  margin-top: 10rpx;
+}
+/*firstPage-promise  */
+.firstPage-promise{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding: 50rpx; */
+  background: #f5f5f5;
+  height: 160rpx;
+  padding-top:30rpx;
+  padding-bottom:50rpx;
+  padding-left:20rpx;
+padding-right:20rpx;
+
+
+
+}
+.firstPage-promise .firstPage-edu{
+   display: flex;
+  flex-direction: column;
+  font-size: 20rpx;
+  width: 180rpx;
+  text-align: center;
+  
+}
+.firstPage-edu image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+  padding-left: 10rpx;
+  margin:0 auto;
+
+ 
+}
+/* .firstPage-edu .avoid{
+  padding-left: 30rpx;
+} */
+.firstPage-edu text{
+  color: #757575;
+  font-size: 23rpx;
+  text-align: center;
+  margin-left: 16rpx;
+
+}
+.weui-cell__fh{
+  margin-left: 10px;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 24rpx;
+}
+.big-promise{
+  display: flex;
+  flex-direction: row;
+  padding-top: 50rpx;
+   font-size: 25rpx;
+    background: #f5f5f5;
+}
+.big-promise .believe{
+  color: #ff7a03;
+  border: 1px solid #ff7a03;
+  border-radius: 15rpx;
+  display: block;
+  margin-left: 44rpx;
+ margin-right: 15rpx;
+}
+
+.input-phcolor-success{
+    color:#9b9b9b;  
+    font-size:30rpx;
+}
+.input-phcolor-error{
+    color:red;
+    font-size:30rpx;
+}
+
+.phcolor-success:empty::before{
+    color: #9b9b9b;  
+    content:"请选择";  
+}
+
+.phcolor-error:empty::before{
+    color:red;
+    content:"请选择";  
+}
+
+.carPosition{
+position: absolute;
+right:26rpx;
+width:375rpx;
+padding-right:54rpx;
+z-index: 99;
+
+}
+.arrImg{
+position:absolute;
+right:23rpx;
+margin-top:26rpx;
+
+
+}
+.firstPage-car{
+  height:65rpx;
+  width: 178rpx;
+}
+
+ /* .name-style{
+    padding-right: 45rpx;
+  }  */
